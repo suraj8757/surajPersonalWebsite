@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Ankesh Kumar - AI/ML Engineer, Stock Trader, and Adventure Enthusiast">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Ankesh Kumar | Engineer · Trader · Explorer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&family=Outfit:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">Email copied!</div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Ankesh<span>®</span></a>
+            <button class="nav-mobile-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="#basecamp" class="nav-link" data-section="basecamp">Base Camp</a>
+                <a href="#journey" class="nav-link" data-section="journey">Journey</a>
+                <a href="#expeditions" class="nav-link" data-section="expeditions">Expeditions</a>
+                <a href="#gallery" class="nav-link" data-section="gallery">Gallery</a>
+                <a href="#market" class="nav-link" data-section="market">Market</a>
+                <a href="#studio" class="nav-link" data-section="studio">Studio</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <!-- Slideshow Container -->
+        <div class="hero-slideshow" id="heroSlideshow">
+            <!-- Slides will be injected by JavaScript -->
+        </div>
+
+        <!-- Dark Overlay -->
+        <div class="hero-overlay"></div>
+
+        <!-- Mountain Silhouette SVG -->
+        <svg class="hero-mountains" viewBox="0 0 1440 320" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#141416" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,218.7C672,235,768,245,864,234.7C960,224,1056,192,1152,181.3C1248,171,1344,181,1392,186.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+
+        <!-- Hero Content with Varied Typography -->
+        <div class="hero-content">
+            <!-- Outlined + Gradient Name -->
+            <h1 class="hero-name">
+                Ankesh
+                <span>Kumar</span>
+            </h1>
+
+            <!-- Monospace Tagline with Typewriter -->
+            <p class="hero-tagline" id="typewriter">
+                <span id="typewriterText"></span><span class="cursor"></span>
+            </p>
+
+            <!-- Company Badges -->
+            <div class="hero-badges">
+                <div class="hero-badge thomson-reuters">
+                    <span class="dot"></span>
+                    <span>Thomson Reuters</span>
+                </div>
+                <div class="hero-badge lseg">
+                    <span class="dot"></span>
+                    <span>LSEG</span>
+                </div>
+                <div class="hero-badge bolt">
+                    <span class="dot"></span>
+                    <span>BOLT Insurance</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Hint -->
+        <div class="scroll-hint">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+
+        <!-- Slideshow Controls -->
+        <div class="hero-controls">
+            <button class="hero-arrow" id="heroPrev" aria-label="Previous slide">←</button>
+            <div class="hero-dots" id="heroDots"></div>
+            <button class="hero-arrow" id="heroNext" aria-label="Next slide">→</button>
+        </div>
+    </header>
+
+    <!--
+    =====================================================================
+    SECTION 01 — BASE CAMP (About)
+    =====================================================================
+    -->
+    <section id="basecamp" class="reveal">
+        <div class="container">
+            <span class="section-label">01 — Base Camp</span>
+
+            <div class="about-grid">
+                <!-- Portrait with Coordinates -->
+                <div class="about-portrait">
+                    <img src="images/portrait/profile.jpg"
+                         alt="Ankesh Kumar Portrait" loading="lazy">
+                </div>
+
+                <!-- Content with Varied Typography -->
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Engineer by profession, explorer by nature. I've architected data pipelines that power global markets at <strong style="color: var(--color-thomson-reuters);">Thomson Reuters(TRI)</strong>, engineered financial platforms at <strong style="color: var(--color-lseg);">.<br>    London Stock Exchange Group(LSEG)</strong>, and built insurance solutions at <strong style="color: var(--color-bolt);">BOLT US</strong>.</p>
+                        <p>JEE Advanced qualifier. School topper. Always learning — whether it's training neural networks, reading candlestick patterns, or discovering trails less traveled.</p>
+                    </div>
+
+                    <!-- Quote Block -->
+                    <blockquote class="about-quote">
+                        "The best view comes after the hardest climb."
+                    </blockquote>
+
+                    <!-- Stats -->
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="1">0</div>
+                            <div class="stat-label">JEE Advanced</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="2">0</div>
+                            <div class="stat-label">School Topper</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="3">0</div>
+                            <div class="stat-label">Global Companies</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="5">0</div>
+                            <div class="stat-label">Tech Domains</div>
+                        </div>
+                    </div>
+
+                    <!-- Skills with Category Labels -->
+                    <div class="skills-container">
+                        <div class="skills-category">
+                            <span class="skills-category-title">AI / ML</span>
+                            <div class="skills-pills">
+                                <span class="skill-pill">PyTorch</span>
+                                <span class="skill-pill">TensorFlow</span>
+                                <span class="skill-pill">Hugging Face</span>
+                                <span class="skill-pill">BERT</span>
+                                <span class="skill-pill">Scikit-learn</span>
+                            </div>
+                        </div>
+                        <div class="skills-category">
+                            <span class="skills-category-title">Data Engineering</span>
+                            <div class="skills-pills">
+                                <span class="skill-pill">Apache Spark</span>
+                                <span class="skill-pill">Kafka</span>
+                                <span class="skill-pill">Airflow</span>
+                                <span class="skill-pill">AWS</span>
+                                <span class="skill-pill">SQL</span>
+                            </div>
+                        </div>
+                        <div class="skills-category">
+                            <span class="skills-category-title">IoT / Systems</span>
+                            <div class="skills-pills">
+                                <span class="skill-pill">Raspberry Pi</span>
+                                <span class="skill-pill">Arduino</span>
+                                <span class="skill-pill">MQTT</span>
+                                <span class="skill-pill">Computer Vision</span>
+                            </div>
+                        </div>
+                        <div class="skills-category">
+                            <span class="skills-category-title">Design</span>
+                            <div class="skills-pills">
+                                <span class="skill-pill">Photoshop</span>
+                                <span class="skill-pill">Illustrator</span>
+                                <span class="skill-pill">Figma</span>
+                                <span class="skill-pill">UI/UX</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--
+    =====================================================================
+    SECTION 02 — JOURNEY (Experience)
+    =====================================================================
+    -->
+    <section id="journey" class="reveal">
+        <div class="container">
+            <span class="section-label">02 — Journey</span>
+            <h2 class="section-title">Work Experience</h2>
+
+            <!-- Company Logo Strip -->
+            <div class="company-strip">
+                <div class="company-logo lseg">LSEG</div>
+                <div class="company-logo thomson-reuters">Thomson Reuters</div>
+                <div class="company-logo bolt">BOLT</div>
+            </div>
+
+            <!-- Timeline -->
+            <div class="timeline" id="timeline">
+
+                <!-- LSEG -->
+                <div class="timeline-card reveal lseg">
+                    <div class="timeline-card-inner">
+                        <div class="timeline-header">
+                            <h3 class="company-name">LSEG</h3>
+                            <p class="role-title">Software Engineer / Data Engineer</p>
+                        </div>
+                        <div class="timeline-date">2025 — Present</div>
+                        <ul class="timeline-bullets">
+                            <li>Built scalable data pipelines processing millions of market data records daily</li>
+                            <li>Developed real-time analytics dashboards for trading floor operations</li>
+                            <li>Collaborated with global teams across London, Bangalore, and New York</li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span class="tech-pill">Apache Spark</span>
+                            <span class="tech-pill">Kafka</span>
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">AWS</span>
+                            <span class="tech-pill">SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Thomson Reuters -->
+                <div class="timeline-card reveal thomson-reuters">
+                    <div class="timeline-card-inner">
+                        <div class="timeline-header">
+                            <h3 class="company-name">Thomson Reuters</h3>
+                            <p class="role-title">AI / ML Engineer</p>
+                        </div>
+                        <div class="timeline-date">2023 — 2024</div>
+                        <ul class="timeline-bullets">
+                            <li>Developed NLP models for document classification and entity extraction</li>
+                            <li>Implemented transformer-based solutions for legal document analysis</li>
+                            <li>Reduced processing time by 40% through model optimization</li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span class="tech-pill">PyTorch</span>
+                            <span class="tech-pill">BERT</span>
+                            <span class="tech-pill">spaCy</span>
+                            <span class="tech-pill">Docker</span>
+                            <span class="tech-pill">Kubernetes</span>
+                        </div>
+                    </div>
+                </div>
+f
+                <!-- BOLT -->
+                <div class="timeline-card reveal bolt">
+                    <div class="timeline-card-inner">
+                        <div class="timeline-header">
+                            <h3 class="company-name">BOLT US Insurance</h3>
+                            <p class="role-title">Full Stack Developer</p>
+                        </div>
+                        <div class="timeline-date">2022 — 2023</div>
+                        <ul class="timeline-bullets">
+                            <li>Built insurance policy management platform serving 10,000+ agents</li>
+                            <li>Integrated third-party APIs for real-time quote generation</li>
+                            <li>Implemented automated testing suite reducing bugs by 60%</li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span class="tech-pill">React</span>
+                            <span class="tech-pill">Node.js</span>
+                            <span class="tech-pill">PostgreSQL</span>
+                            <span class="tech-pill">Redis</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--
+    =====================================================================
+    SECTION 03 — EXPEDITIONS (Projects)
+    =====================================================================
+    -->
+    <section id="expeditions" class="reveal">
+        <div class="container">
+            <span class="section-label">03 — Expeditions</span>
+            <h2 class="section-title">Featured Projects</h2>
+
+            <div class="projects-grid">
+
+                <!-- Project 1: NLP -->
+                <div class="project-card reveal">
+                    <div class="project-card-image">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=500&fit=crop"
+                             alt="NLP Project - AI Document Analysis" loading="lazy">
+                    </div>
+                    <div class="project-card-content">
+                        <span class="project-card-category">Natural Language Processing</span>
+                        <h3 class="project-card-title">Legal Document Intelligence</h3>
+                        <p class="project-card-description">BERT-based model for clause extraction and contract analysis. Processes 1000+ documents per hour with 94% accuracy.</p>
+                        <div class="project-card-links">
+                            <a href="#" class="project-card-link" target="_blank" rel="noopener">View Demo</a>
+                            <a href="#" class="project-card-link" target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: IoT -->
+                <div class="project-card reveal">
+                    <div class="project-card-image">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=500&fit=crop"
+                             alt="IoT Smart Agriculture Project" loading="lazy">
+                    </div>
+                    <div class="project-card-content">
+                        <span class="project-card-category">Internet of Things</span>
+                        <h3 class="project-card-title">Smart Agriculture Monitor</h3>
+                        <p class="project-card-description">End-to-end IoT solution for precision farming. Real-time soil moisture, temperature, and humidity monitoring.</p>
+                        <div class="project-card-links">
+                            <a href="#" class="project-card-link" target="_blank" rel="noopener">View Demo</a>
+                            <a href="#" class="project-card-link" target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: AI Trading -->
+                <div class="project-card reveal">
+                    <div class="project-card-image">
+                        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=500&fit=crop"
+                             alt="Stock Price Prediction ML Model" loading="lazy">
+                    </div>
+                    <div class="project-card-content">
+                        <span class="project-card-category">Machine Learning</span>
+                        <h3 class="project-card-title">Stock Price Predictor</h3>
+                        <p class="project-card-description">LSTM-based time series model for intraday price movement prediction. Combines technical indicators with sentiment.</p>
+                        <div class="project-card-links">
+                            <a href="#" class="project-card-link" target="_blank" rel="noopener">View Demo</a>
+                            <a href="#" class="project-card-link" target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Computer Vision -->
+                <div class="project-card reveal">
+                    <div class="project-card-image">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=500&fit=crop"
+                             alt="Satellite Image Segmentation" loading="lazy">
+                    </div>
+                    <div class="project-card-content">
+                        <span class="project-card-category">Computer Vision</span>
+                        <h3 class="project-card-title">Satellite Image Segmentation</h3>
+                        <p class="project-card-description">U-Net architecture for land use classification from satellite imagery. Achieved 89% mIoU on EuroSAT dataset.</p>
+                        <div class="project-card-links">
+                            <a href="#" class="project-card-link" target="_blank" rel="noopener">View Demo</a>
+                            <a href="#" class="project-card-link" target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--
+    =====================================================================
+    SECTION 04 — GALLERY (Adventure Photography)
+    =====================================================================
+    -->
+    <section id="gallery" class="reveal">
+        <div class="container">
+            <span class="section-label">04 — Gallery</span>
+            <h2 class="section-title">Adventures</h2>
+
+            <div class="gallery-grid" id="galleryGrid">
+
+                <!-- Personal Photo 1 - Friends -->
+                <div class="gallery-item reveal" data-index="0">
+                    <img src="images/gallery/myphoto-1.jpg?v=2"
+                         alt="Photo with friends" loading="lazy" style="object-position: center center;">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-location">📍 With Friends</div>
+                        <h3 class="gallery-item-title">Good Times</h3>
+                    </div>
+                </div>
+
+                <!-- Personal Photo 2 - Night/City -->
+                <div class="gallery-item reveal" data-index="1">
+                    <img src="images/gallery/myphoto-2.jpg?v=2"
+                         alt="Night travel photo" loading="lazy" style="object-position: center center;">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-location">📍 Travel Diaries</div>
+                        <h3 class="gallery-item-title">Explorer</h3>
+                    </div>
+                </div>
+
+                <!-- Personal Photo 6 - Snow Mountain Pose -->
+                <div class="gallery-item reveal" data-index="3">
+                    <img src="images/gallery/myphoto-6.png?v=2"
+                         alt="Snow mountain adventure" loading="lazy" style="object-position: center center;">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-location">📍 Snow Valley</div>
+                        <h3 class="gallery-item-title">Mountain Explorer</h3>
+                    </div>
+                </div>
+
+                <!-- Personal Photo 7 - Snow Portrait -->
+                <div class="gallery-item reveal" data-index="4">
+                    <img src="images/gallery/myphoto-7.png?v=2"
+                         alt="Snow portrait" loading="lazy" style="object-position: center center;">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-location">📍 Winter Trip</div>
+                        <h3 class="gallery-item-title">Snow Moments</h3>
+                    </div>
+                </div>
+
+                <!-- Adventure Photo - Sunrise Summit -->
+                <div class="gallery-item reveal" data-index="5">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=500&fit=crop"
+                         alt="Sunrise Mountain Summit" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-location">📍 Western Ghats</div>
+                        <h3 class="gallery-item-title">Sunrise Summit</h3>
+                    </div>
+                </div>
+
+                <!-- Adventure Photo - Forest Expedition -->
+                <div class="gallery-item reveal" data-index="6">
+                    <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&h=600&fit=crop"
+                         alt="Forest Trail" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-location">📍 Wayanad, Kerala</div>
+                        <h3 class="gallery-item-title">Forest Expedition</h3>
+                    </div>
+                </div>
+
+                <!-- Adventure Photo - Lake/Beach -->
+                <div class="gallery-item reveal" data-index="7">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=400&fit=crop"
+                         alt="Beach Sunset" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-location">📍 Goa, India</div>
+                        <h3 class="gallery-item-title">Golden Hour</h3>
+                    </div>
+                </div>
+
+                <!-- Adventure Photo - Valley -->
+                <div class="gallery-item reveal" data-index="8">
+                    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&h=800&fit=crop"
+                         alt="Valley View" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-location">📍 Valley of Flowers</div>
+                        <h3 class="gallery-item-title">Alpine Meadows</h3>
+                    </div>
+                </div>
+
+                <!-- Personal Photo 5 - Mountain View -->
+                <div class="gallery-item reveal" data-index="9">
+                    <img src="images/gallery/myphoto-5.jpg?v=2"
+                         alt="Mountain landscape view" loading="lazy" style="object-position: center center;">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-location">📍 Hill Station</div>
+                        <h3 class="gallery-item-title">Mountain View</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--
+    =====================================================================
+    SECTION 05 — MARKET (Trading)
+    =====================================================================
+    -->
+    <section id="market" class="reveal trading-section">
+        <div class="container">
+            <span class="section-label">05 — Market</span>
+            <h2 class="section-title">Trading Philosophy</h2>
+
+            <div class="trading-grid">
+                <div class="trading-philosophy">
+                    <!-- Large Quote with Gold Accent -->
+                    <blockquote class="trading-quote">
+                        "The market is a device for transferring money from the impatient to the patient."
+                    </blockquote>
+
+                    <p class="trading-text">
+                        My approach combines quantitative analysis with behavioral psychology. I focus on swing trading in Indian equity markets, using technical analysis alongside ML-based sentiment indicators.
+                    </p>
+                    <p class="trading-text">
+                        Risk management is paramount — preserve capital, let winners run. Currently tracking NIFTY 50, Bank Nifty, and select mid-cap IT stocks. Building algorithmic strategies for intraday momentum plays.
+                    </p>
+                </div>
+
+                <div class="trading-stats">
+                    <div class="trading-stat reveal">
+                        <div class="trading-stat-icon">⏱</div>
+                        <div class="trading-stat-value" data-count="5">0</div>
+                        <div class="trading-stat-label">Years Experience</div>
+                    </div>
+                    <div class="trading-stat reveal">
+                        <div class="trading-stat-icon">🎯</div>
+                        <div class="trading-stat-value" data-count="68">0</div>
+                        <div class="trading-stat-label">Win Rate %</div>
+                    </div>
+                    <div class="trading-stat reveal">
+                        <div class="trading-stat-icon">📊</div>
+                        <div class="trading-stat-value" data-count="500">0</div>
+                        <div class="trading-stat-label">+ Trades</div>
+                    </div>
+                    <div class="trading-stat reveal">
+                        <div class="trading-stat-icon">🧠</div>
+                        <div class="trading-stat-value" data-count="3">0</div>
+                        <div class="trading-stat-label">Strategies</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--
+    =====================================================================
+    SECTION 06 — STUDIO (Design Work)
+    =====================================================================
+    -->
+    <section id="studio" class="reveal">
+        <div class="container">
+            <span class="section-label">06 — Studio</span>
+            <h2 class="section-title">Design Work</h2>
+
+            <div class="design-grid">
+
+                <!-- Design 1 - Large - Typography/Layout -->
+                <div class="design-card reveal">
+                    <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=1200&h=600&fit=crop&q=85"
+                         alt="Creative typography poster design" loading="lazy">
+                    <div class="design-card-overlay">
+                        <span class="design-card-category">Typography</span>
+                        <h3 class="design-card-title">Bold Statements</h3>
+                    </div>
+                </div>
+
+                <!-- Design 2 - UI/UX Dashboard -->
+                <div class="design-card reveal">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&q=85"
+                         alt="Modern dashboard UI design" loading="lazy">
+                    <div class="design-card-overlay">
+                        <span class="design-card-category">UI/UX</span>
+                        <h3 class="design-card-title">Dashboard Design</h3>
+                    </div>
+                </div>
+
+                <!-- Design 3 - Architecture/Minimal -->
+                <div class="design-card reveal">
+                    <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?w=800&h=600&fit=crop&q=85"
+                         alt="Minimalist geometric design" loading="lazy">
+                    <div class="design-card-overlay">
+                        <span class="design-card-category">Minimalism</span>
+                        <h3 class="design-card-title">Geometric Balance</h3>
+                    </div>
+                </div>
+
+                <!-- Design 4 - Creative Work -->
+                <div class="design-card reveal">
+                    <img src="https://images.unsplash.com/photo-1563089145-599997674d42?w=800&h=600&fit=crop&q=85"
+                         alt="Creative neon light art" loading="lazy">
+                    <div class="design-card-overlay">
+                        <span class="design-card-category">Light Art</span>
+                        <h3 class="design-card-title">Neon Dreams</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--
+    =====================================================================
+    SECTION 07 — CONTACT
+    =====================================================================
+    -->
+    <section id="contact" class="reveal">
+        <div class="container">
+            <span class="section-label">07 — Contact</span>
+
+            <div class="contact-grid">
+
+                <!-- Left Column -->
+                <div class="contact-info">
+                    <h2 class="contact-headline">
+                        Let's explore<br>
+                        <span>something new.</span>
+                    </h2>
+                    <p class="contact-description">
+                        Open to opportunities in AI/ML, data engineering, or quantitative trading. Also happy to discuss trekking routes, camera gear, or the best chai spots.
+                    </p>
+
+                    <!-- Email with copy functionality -->
+                    <div class="contact-email-wrapper" id="emailWrapper">
+                        <span class="contact-email">ankeshcse8084@gmail.com</span>
+                        <span class="email-copy-hint">Click to copy</span>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="contact-social">
+                        <a href="https://github.com" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:ankeshcse8084@gmail.com" class="social-link" aria-label="Email">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column - Contact Form -->
+                <div class="contact-form-wrapper">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="What should I call you?" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="So I can write back" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea id="message" name="message" class="form-textarea" placeholder="Ask me anything..." required></textarea>
+                        </div>
+                        <button type="submit" class="form-submit" id="formSubmit">Send Message</button>
+
+                        <div class="form-message success" id="formSuccess">
+                            Thanks for reaching out! I'll get back to you soon.
+                        </div>
+                        <div class="form-message error" id="formError">
+                            Something went wrong. Please try again.
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--
+    =====================================================================
+    LIGHTBOX
+    =====================================================================
+    -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">×</button>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">←</button>
+        <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">→</button>
+        <div class="lightbox-content">
+            <img class="lightbox-image" id="lightboxImage" src="" alt="">
+            <div class="lightbox-caption">
+                <h3 class="lightbox-title" id="lightboxTitle"></h3>
+                <div class="lightbox-counter" id="lightboxCounter"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--
+    =====================================================================
+    FOOTER
+    =====================================================================
+    -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">© 2024 Ankesh Kumar. Crafted with precision.</p>
+                <button class="footer-back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+            </div>
+        </div>
+    </footer>
+
+    <!--
+    =====================================================================
+    JAVASCRIPT
+    =====================================================================
+    -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>

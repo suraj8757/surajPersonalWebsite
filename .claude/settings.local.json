@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__ide__getDiagnostics",
+      "Bash(open:*)",
+      "mcp__ide__executeCode",
+      "Bash(python3:*)",
+      "Bash(pip3 install:*)",
+      "Bash(mv \"WhatsApp Image 2026-04-06 at 13.38.42 \\(1\\).jpeg\" myphoto-1.jpg)",
+      "Bash(mv \"WhatsApp Image 2026-04-06 at 13.38.42.jpeg\" myphoto-2.jpg)",
+      "Bash(mv \"WhatsApp Image 2026-04-06 at 13.38.43 \\(1\\).jpeg\" myphoto-3.jpg)",
+      "Bash(mv \"WhatsApp Image 2026-04-06 at 13.38.43 \\(2\\).jpeg\" myphoto-4.jpg)",
+      "Bash(mv \"WhatsApp Image 2026-04-06 at 13.38.43.jpeg\" myphoto-5.jpg)",
+      "Bash(cp /Users/surajank/.claude/image-cache/5fc9d3e0-d4af-44d8-ab01-30e58f66e952/14.png /Users/surajank/Desktop/htmlpractice/Portfolio-site/images/gallery/myphoto-6.png)",
+      "Bash(cp /Users/surajank/.claude/image-cache/5fc9d3e0-d4af-44d8-ab01-30e58f66e952/15.png /Users/surajank/Desktop/htmlpractice/Portfolio-site/images/gallery/myphoto-7.png)"
+    ]
+  }
+}
