@@ -211,6 +211,53 @@ Your contact form currently shows a success message but doesn't send emails. To 
 
 ---
 
+---
+
+## 🚀 Deploy to GitHub Pages (FREE)
+
+Since your repository is already on GitHub, you can host your portfolio for **free** with a shareable URL!
+
+### Your URL Will Be:
+```
+https://suraj8757.github.io/surajPersonalWebsite/
+```
+
+### Step-by-Step Setup:
+
+1. **Go to your GitHub repository**
+   - Visit: https://github.com/suraj8757/surajPersonalWebsite
+
+2. **Open Settings**
+   - Click the **Settings** tab (top right of the repo)
+
+3. **Go to Pages section**
+   - In the left sidebar, click **Pages**
+
+4. **Select source**
+   - Under "Build and deployment", find "Source"
+   - Select **"Deploy from a branch"**
+   - Choose **"main"** branch
+   - Select **"/ (root)"** folder
+   - Click **Save**
+
+5. **Wait 2-5 minutes**
+   - GitHub will build and deploy your site
+   - Refresh the page to see the green success message with your URL
+
+6. **Done!**
+   - Visit: `https://suraj8757.github.io/surajPersonalWebsite/`
+   - Share this URL with anyone!
+
+### Troubleshooting:
+
+| Problem | Solution |
+|---------|----------|
+| Site not showing | Wait 5 minutes, then hard refresh (Ctrl+F5 or Cmd+Shift+R) |
+| Images not loading | Unsplash images need internet; site won't work offline |
+| Changes not appearing | Push your changes to GitHub first, then wait 2 minutes |
+
+---
+
 **Questions?** Check the inline comments in `index.html` — each section has instructions!
 
 **Happy editing!** 🚀
