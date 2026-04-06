@@ -107,13 +107,13 @@ function initHeroSlideshow() {
         goToSlide(currentSlide - 1);
     }
 
-    // Start auto-advance (4 seconds)
+    // Start auto-advance (6 seconds)
     function startSlideshow() {
         slideshowInterval = setInterval(() => {
             if (!isPaused) {
                 nextSlide();
             }
-        }, 2500);
+        }, 6000);
     }
 
     // Stop auto-advance
@@ -732,6 +732,21 @@ function initEmailCopy() {
 }
 
 /** ---------------------------------------------------------------------
+    CALL ICON CLICK HANDLER
+    - Shows error message when clicked
+    --------------------------------------------------------------------- */
+function initCallIcon() {
+    const callIcon = document.getElementById('callIcon');
+
+    if (!callIcon) return;
+
+    callIcon.addEventListener('click', (e) => {
+        e.preventDefault();
+        alert("You Don't have permission to call");
+    });
+}
+
+/** ---------------------------------------------------------------------
     MOBILE NAVIGATION
     - Hamburger toggle
     - Closes on link click
@@ -797,6 +812,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initCountUp();
     initContactForm();
     initEmailCopy();
+    initCallIcon();
     initMobileNav();
     initBackToTop();
 });
